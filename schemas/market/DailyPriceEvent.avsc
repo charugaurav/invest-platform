@@ -1,0 +1,20 @@
+{
+  "namespace": "com.invest.schemas.market",
+  "type": "record",
+  "name": "DailyPriceEvent",
+  "fields": [
+    { "name": "event_id", "type": "string" },
+    { "name": "stock_symbol", "type": "string" },
+    { "name": "as_of_date", "type": "string" },
+
+    { "name": "open", "type": "double" },
+    { "name": "high", "type": "double" },
+    { "name": "low", "type": "double" },
+    { "name": "close", "type": "double" },
+
+    { "name": "volume", "type": "long" },
+
+    { "name": "produced_ts", "type": "long" },
+    { "name": "schema_version", "type": "int", "default": 1 }
+  ]
+}
